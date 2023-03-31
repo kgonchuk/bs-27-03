@@ -29,7 +29,7 @@
   
   img {
     display: block;
-  
+  width: 100$;
     height: auto;
   }
   
@@ -258,7 +258,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-   
+  
   }
   .hero-link:hover,
   .hero-link:focus{
@@ -630,6 +630,9 @@ Letter-spacing: 0.02em;
       Line-height: 1.36;
       color: #303030;
   }
+  .gallery-item{
+    margin-bottom: 30px;
+  }
   /* contacts */
   .contacts{
     background-image: url(../img/bg-contact.png);
@@ -640,7 +643,9 @@ Letter-spacing: 0.02em;
       background-color:#191C26;
     }
    
-    
+    .contact-form{
+      padding-bottom: 84px;
+    }
    
     .contacts-title{
       margin-bottom: 40px;
@@ -705,6 +710,9 @@ Letter-spacing: 0.02em;
       height: 24px;
       color: #303030;
     fill: #FFFFFF;
+    }
+    .contact-container{
+      width: 100%;
     }
     .modal-form{
       display: flex;
@@ -830,7 +838,7 @@ Letter-spacing: 0.02em;
         justify-content: center;
         }
         .modal-booking-input{
-          width: 270px;
+          width: 100%;
           margin-bottom: 44px;
         padding-bottom: 8px;
           background-color: transparent;
@@ -848,7 +856,7 @@ Letter-spacing: 0.02em;
         }
         .modal-booking-input-message{
           resize: none;
-          width: 570px;
+          width: 100%;
           height: 100px;
           padding-bottom: 60px;
           transition: border-color 250ms linear;
@@ -860,6 +868,7 @@ Letter-spacing: 0.02em;
           
         }
         .modal-booking-submit{
+          margin: 0 auto;
           display: block;
           color: #FFFFFF;
           background-color: transparent;
@@ -1088,8 +1097,14 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px){
     width: 45%;
     padding-left: 100px;
   }
-}
+  .modal-booking-input-message{
+    width: 570px;
+   
+} .modal-booking-input{
+  width: 270px;
   
+}
+}
   
   
   
