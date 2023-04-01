@@ -118,7 +118,7 @@
 }
     @media screen and (min-width: 1170px) {
        .container{
-        max-width: 1170px
+        max-width: 1600px
        } 
     } 
         /*  */
@@ -500,9 +500,9 @@ Letter-spacing: 0.02em;
   top: 7px;
   }
   .feature-list{
-    width: 170px;
+    width: 194px;
     height: 132px;
-    padding: 20px 24px;
+    padding: 20px 35px;
     background-color: #F7F7F7;
   }
   .feature-list:nth-child(even){
@@ -511,14 +511,14 @@ Letter-spacing: 0.02em;
   }
   
   .feature-item{
-    width: 100%;
+    max-width: 418px;
     display: flex;
    flex-wrap: wrap;
    gap: 30px;
   }
   .feature-content{
     width: 100%;
-    max-width: 500px;
+    max-width: 418px;
   }
   .feature-list-desc{
   font-weight: 600;
@@ -746,7 +746,7 @@ Letter-spacing: 0.02em;
         .modal-booking-contact{
             display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         }
         .modal-booking-input{
           width: 100%;
@@ -1063,13 +1063,17 @@ screen and (min-resolution: 2dppx) and (min-width: 768px){
     background-image: url(../img/prices-bg-tablet@2x.png);
   }
 }
-@media screen and (min-width:768px) and (max-width: 1199px) {
+@media screen and (min-width:768px) and (max-width: 1170px) {
   .mobile-menu-tel{
       order: 1;
     }
    
     .mobile-menu-button{
       margin-left: 90px;
+    }
+    .feature-container{
+      display: flex;
+      flex-direction: column-reverse;
     }
 }
   @media screen and (min-width:768px) {
@@ -1089,8 +1093,20 @@ screen and (min-resolution: 2dppx) and (min-width: 768px){
     .prices-item-text{
       font-size: 18px;
     }
+    .feature-container{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .feature-item{
+      max-width: 450px;
+ 
+    }
     .feature-list{
       width: 210px;
+  }
+  .feature-content{
+    width: 100%;
+    max-width: 500px;
   }
   .our-team-list{
     display: flex;
@@ -1193,18 +1209,23 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px){
     .prices-item{
       gap:  12px;
     }
-    .feature-container{
-      display: flex;
-   
     
+    .feature-list{
+      /* margin-left: 130px; */
+      width: 170px;
+      height: 132px;
+      padding: 20px 24px;
+      background-color: #F7F7F7;
     }
     .feature-item{
-      width: 45%;
+      /* width: 45%; */
       display: flex;
       flex-wrap: wrap;
       column-gap: 30px;
-      padding-left: 70px;
-      padding-right: 70px;
+      /* padding-left: 70px;
+      padding-right: 70px; */
+      margin-left: 70px;
+      margin-right: 130px;
     }
     .feature-content{
       width: 55%;
@@ -1212,6 +1233,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px){
   }
   .feature-container{
     display: flex;
+    flex-direction: initial;
   }
   .our-team-list{
   
