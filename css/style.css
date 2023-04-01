@@ -108,7 +108,7 @@
 
   @media screen and (max-width: 767px) {
     .container{
-        max-width: 418px;
+        max-width: 480px;
     }
   }
   @media screen and (min-width:768px) {
@@ -129,13 +129,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
   }
   
   .header-container {
     display: flex;
     align-items: center;
-    width: 100%;
   }
   
   .header-navigation {
@@ -143,25 +141,28 @@
     align-items: center;
   }
   
-
-  .header-contacts{
-    
-  }
-
-  .header-item {
-    margin-bottom: 24px;
-  }
+  
+  
+  .header-item {}
   
   .header-link {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.1em;
-    color: #F7F7F7;
+    color: #ffffff;
+    position: relative;
     transition: color 0.35s linear;
   }
   
- 
+  .header-link:hover,
+  .header-link:focus {
+    color: var(--accent-color);
+  }
+  
+  .header-link.active {
+    color: var(--accent-color);
+  }
   
   .header-link.active::after {
     content: "";
@@ -171,7 +172,27 @@
     position: absolute;
     left: 0;
     bottom: -10px;
-  } 
+  }
+  
+  .header-tel {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: 43px;
+  }
+  
+  .header-btn {
+    min-width: 160px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+    padding: 12px 20px;
+  }
   
   .mobile-menu-tel {
     font-weight: 600;
@@ -185,6 +206,9 @@
   }
   
   .mobile-menu-button {
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.1em;
     min-width: 160px;
     background-color: transparent;
     color: #F7F7F7;
@@ -576,6 +600,7 @@ Letter-spacing: 0.02em;
   }
   .our-team-item{
     width: 100%;
+    
   }
   
   .our-team-text{
@@ -714,121 +739,7 @@ Letter-spacing: 0.02em;
     .contact-container{
       width: 100%;
     }
-    .modal-form{
-      display: flex;
-      flex-direction: column;
-      }
-      .modal-form-input{
-        width: 100%;
-        height: 40px;
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: 4px;
-        padding-left: 42px;
-        font-size: 16px;
-        transition: border-color 250ms linear;
-      }
-      .modal-form-input-desc{
-        display: block;
-      Font-family: "Roboto";
-      font-weight: 400;
-      Font-size: 12px;
-      Line-height: 1.16;
-      Letter-spacing: 0.04em;
-      color: #8E8F99;
-      margin-bottom: 4px;
-      }
-      .modal-form-field{
-        margin-bottom: 8px;
-      }
-      .modal-form-input-icon{
-        display: block;
-        width: 18px;
-        height: 18px;
-        position: absolute;
-        top: 50%;
-        left: 12px;
-        transform: translate(0, -50%);
-        
-      }
-      
-      .modal-form-input-wrap{
-        display: block;
-        position: relative;
-      }
-      .modal-form-input:focus,
-      .modal-form-input:hover{
-        outline: none;
-        border-color:#4D5AE5;
-        fill: #4D5AE5;
-      }
-      
-      .modal-form-input:hover + .modal-form-input-icon{
-      fill: #4D5AE5;
-      } 
-      
-      
-      .modal-form-message{
-        resize: none;
-        width: 100%;
-        height: 100px;
-        padding: 8px 16px;
-        transition: border-color 250ms linear;
-        
-      }
-      .modal-form-message:focus{
-        outline: none;
-        border-color: #4D5AE5;
-      
-      }
-      .modal-form-message::placeholder{
-        text-transform: uppercase;
-      }
-      .modal-form-check-desc::before{
-        width: 16px;
-        height: 16px;
-        display: block;
-        border: 1.25px solid #2E2F42;
-        border-radius: 2px;
-        cursor: pointer;
-        content: "";
-        margin-right: 8px;
-      
-      }
-      .modal-form-check:checked + .modal-form-check-desc::before{
-      background-color: #4D5AE5;
-      background-image: url(../img/checkbox.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-      }
-      .modal-form-check:focus + .modal-form-check-desc::before{
-        outline: 2px #4D5AE5;
-        
-        }
-        .modal-form-check-desc{
-         
-          display: flex;
-          align-items: center;
-          Font-size: 12px;
-          Letter-spacing: 0.04em;
-          margin-bottom: 24px;
-        }
-        .modal-form-submit {
-          min-width: 160px;
-       align-self: center;
-          color: black;
-          border: 1px solid #FF6C00;
-          border-radius: 25px;
-          padding: 12px 20px;
-          text-transform: uppercase;
-          background-color: transparent;
-          border-color: #FF6C00;
-          transition: var(--text-color) 250ms linear, background-color var(--secondary-text-color);
-        }
-        .modal-form-submit:hover,
-        .modal-form-submit:focus{
-      background-color: #FF6C00;
-        }
+  
         .modal-booking{
    
         }
@@ -845,9 +756,7 @@ Letter-spacing: 0.02em;
           border-color: transparent;
           border-bottom: 1px solid #9DA4BD66;
         }
-        .modal-booking-name{
-        margin-right: 30px;
-        }
+        
         .modal-booking-field{
           display: block;
         
@@ -902,6 +811,210 @@ Letter-spacing: 0.02em;
         .modal-booking-submit:hover{
         background-color: #FF6C00;
         }
+        .copyright{
+          Font-style: 600;
+           Font-size: 11px;
+           Line-height: 1.36;
+           letter-spacing: 0.02em;
+           color: #9DA4BD;
+        }
+        
+        .footer-link{
+          color: #303030;
+        Font-style: 600;
+            Font-size: 11px;
+            Line-height: 1.36;
+            letter-spacing: 0.02em;
+            text-transform: none;
+          }
+        
+          .footer-list{
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            position: absolute;
+            right: 0;
+            top: -20px;
+          }
+          .footer-content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+          }
+          .footer{
+        
+            padding: 56px 0;
+          }
+          .footer-list::before{
+            content: "";
+            width: 60px;
+            height: 1px;
+            background-color: currentColor;
+          }
+          .footer-link:hover,
+            .footer-link:focus{
+              color: ;
+            }
+            .footer-link:hover,
+            .footer-link:focus{
+            color: #FF6C00;
+            }
+        /* ------------- */
+        .backdrop{
+          width: 100%;
+          height: 100%;
+          background-color: rgb(0, 0, 0, 0.5);
+          position: fixed;
+          left: 0;
+          top: 0;
+          transition: opacity 0.35s linear, visibility 0.35s linear;
+        }
+        .modal{
+          padding: 40px;
+          width: 500px;
+          height: 500px;
+          background-color: #FFFFFF;
+          padding: 20px;
+          border-radius: 5px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        
+        }
+        .close-btn-modal{
+          width: 30px;
+          height: 30px;
+          border: 1px solid #111319;
+          display: block;
+          margin-left: auto;
+          border-radius: 50%;
+          background-color: #FFFFFF;
+        }
+        .is-hidden{
+          opacity: 0;
+          visibility: hidden;
+          pointer-events: none;
+        }
+        .modal-form{
+          display: flex;
+          flex-direction: column;
+          }
+          .modal-form-input{
+            width: 100%;
+            height: 40px;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            padding-left: 42px;
+            font-size: 16px;
+            transition: border-color 250ms linear;
+          }
+          .modal-form-desc{
+            display: block;
+          Font-family: "Roboto";
+          font-weight: 400;
+          Font-size: 12px;
+          Line-height: 1.16;
+          Letter-spacing: 0.04em;
+          color: #8E8F99;
+          margin-bottom: 4px;
+          }
+          .modal-form-field{
+            margin-bottom: 8px;
+          }
+          .modal-form-input-icon{
+            display: block;
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translate(0, -50%);
+            
+          }
+          
+          .modal-form-input-wrap{
+            display: block;
+            position: relative;
+          }
+          .modal-form-input:focus,
+          .modal-form-input:hover{
+            outline: none;
+            border-color:#4D5AE5;
+            fill: #4D5AE5;
+          }
+          
+          .modal-form-input:hover + .modal-form-input-icon{
+          fill: #4D5AE5;
+          } 
+          
+          
+          .modal-form-message{
+            resize: none;
+            width: 100%;
+            height: 100px;
+            padding: 8px 16px;
+            transition: border-color 250ms linear;
+            
+          }
+          .modal-form-message:focus{
+            outline: none;
+            border-color: #4D5AE5;
+          
+          }
+          .modal-form-message::placeholder{
+            text-transform: uppercase;
+          }
+          .modal-form-check-desc::before{
+            width: 16px;
+            height: 16px;
+            display: block;
+            border: 1.25px solid #2E2F42;
+            border-radius: 2px;
+            cursor: pointer;
+            content: "";
+            margin-right: 8px;
+          
+          }
+          .modal-form-check:checked + .modal-form-check-desc::before{
+          background-color: #4D5AE5;
+          background-image: url(../img/checkbox.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          }
+          .modal-form-check:focus + .modal-form-check-desc::before{
+            outline: 2px #4D5AE5;
+            
+            }
+            .modal-form-check-desc{
+             
+              display: flex;
+              align-items: center;
+              Font-size: 12px;
+              Letter-spacing: 0.04em;
+              margin-bottom: 24px;
+            }
+            .modal-form-buttom {
+              min-width: 160px;
+           align-self: center;
+              color: black;
+              border: 1px solid #FF6C00;
+              border-radius: 25px;
+              padding: 12px 20px;
+              text-transform: uppercase;
+              background-color: transparent;
+              border-color: #FF6C00;
+              transition: var(--text-color) 250ms linear, background-color var(--secondary-text-color);
+            }
+            .modal-form-buttom:hover,
+            .modal-form-buttom:focus{
+          background-color: #FF6C00;
+            } 
+
+
+
   @media screen and (min-width:480px) {
   
     
@@ -947,40 +1060,17 @@ screen and (min-resolution: 2dppx) and (min-width: 768px){
   .mobile-menu-tel{
       order: 1;
     }
+   
+    .mobile-menu-button{
+      margin-left: 90px;
+    }
 }
   @media screen and (min-width:768px) {
-    .header-link:hover,
-    .header-link:focus {
-      color: var(--accent-color);
-    }
-    
-     .header-link.active {
-      color: var(--accent-color);
-    }
+   
    /* ---HERO-TABLET--- */
-   .header-logo {
-    margin-right: 59px;
-  }
-   
-  .header-list {
-    display: flex;
-    gap: 30px;
-  }
-
-   .hero-desc{
-        font-size: 18px;
-    }
-   
-    .header-link {
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 1.33;
-      letter-spacing: 0.1em;
-      color: #F7F7F7;
-      position: relative;
-      transition: color 0.35s linear;
-    }
-    
+   .mobile-menu-tel{
+    margin-left: 100px;
+   }
     
     .about-btn {
       margin-bottom: 77px;
@@ -1012,7 +1102,35 @@ screen and (min-resolution: 2dppx) and (min-width: 768px){
   .gallery-item{
     width: calc((100% - 60px) / 2);
   }
-
+  .contact-wrap{
+    display: flex;
+  }
+  .contact-address-wrap{
+    width: 65%;
+  }
+  .contact-time-wrap{
+    width: 35%;
+  }
+  .modal-booking-contact{
+    gap: 30px;
+  }
+  .modal-booking-name{
+    width:50%;
+  }
+  .modal-booking-phone{
+    width: 50%;
+  }
+  .footer-list{
+    position: static;
+  }
+  .header-logo {
+    margin-right: 58px;
+  }
+  
+  .header-list {
+    display: flex;
+    gap: 20px;
+  }
 }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
 screen and (min-resolution: 192dpi)and (min-width: 1200px),
@@ -1022,7 +1140,18 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px){
   }
 }
   @media screen and (min-width:1200px) {
+    .header-logo {
+      margin-right: 131px;
+    }
+    
+    .header-list {
+      display: flex;
+      gap: 30px;
+    }
+   
     /* ---HERO-DESKTOP */
+
+
     .header-logo {
       margin-right: 131px;
     }
@@ -1036,6 +1165,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px){
     }
     .about-btn {
       margin-bottom: 42px;
+    }
+    .about-content{
+      max-width: 470px;
     }
     .prices{
       max-width: 1440px;
@@ -1095,7 +1227,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px){
   }
   .contact-wrap{
     width: 45%;
-    padding-left: 100px;
+    padding-left: 200px;
   }
   .modal-booking-input-message{
     width: 570px;
@@ -1104,6 +1236,17 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px){
   width: 270px;
   
 }
+.modal-booking-name{
+  margin-right: 30px;
+  }
+  .contact-wrap{
+    display: block;
+  }
+.contact-time-wrap{
+  width: 100%;
+}
+
+
 }
   
   
