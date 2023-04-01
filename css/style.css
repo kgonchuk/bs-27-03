@@ -1048,6 +1048,13 @@ Letter-spacing: 0.02em;
     .mobile-menu-button{
       display: none;
     }
+    .modal{
+      width: 95%;
+      max-width: 392px;
+      height: 95%;
+      max-height: 586px;
+      overflow: scroll;
+    }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
 screen and (min-resolution: 192dpi)and (min-width: 768px),
