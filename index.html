@@ -46,36 +46,41 @@
                     </li>
                 </ul>
             </nav>
-          a
+          
             <a href="tel:+380441111111" class="mobile-menu-tel link">+38 044 111 11 11</a>
-            <button type="button" class="mobile-menu-button btn" data-modal-open>Online-booking</button>
+            <button type="button" class="mobile-menu-button btn" >Online-booking</button>
               </div></div>
         
-            <!-- <div class="tablet-contact-menu">
-            <a href="tel:+380441111111" class="header-tel link">+38 044 111 11 11</a>
-            <button type="button" data-modal-open class="header-btn btn">Online-booking</button>
+           
         </div>
-        </div>
-        <div class="backdrop-mobile-menu is-hidden" data-modal>
-            <div class="container mobile-menu-container" >
-            <div class="mobile-menu">
-                
-                    <button type="button" class="mobile-menu-close-btn" data-modal-close ><svg class="mobile-menu-close-icon" width="40" height="40">
-                    <use href="./img/symbol-defs.svg#icon-close"></use>
-                </svg></button>
-                <ul class="mobile-menu-nav">
-                    <li class="mobile-menu-nav-item">About</li>
-                    <li class="mobile-menu-nav-item">Services and prices</li>
-                    <li class="mobile-menu-nav-item">Barbers</li>
-                    <li class="mobile-menu-nav-item">Contacts</li>
-                </ul> -->
-             
+        <!-- <div class="backdrop-mobile-menu is-hidden"> -->
+            <div class="container " >
+                <div class="containermobile-menu-container">
+                    <button
+                      class="menu-toggle js-open-menu"
+                      aria-expanded="false"
+                      aria-controls="mobile-menu"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+            
+                </div>
+                  </div> 
+                  </div>
                     
-<!-- <ul class="mobile-menu-list">
-    <li class="mobile-menu-link link"><a href="">Instagram</a></li>
-    <li class="mobile-menu-link link"><a href="">Youtube</a> </li>
-</ul> -->
-                
+ 
            
         </header>
     <main>
@@ -110,17 +115,17 @@
                     <source srcset="./img/about-1-tablet@2x.jpg 2x, img/about-1-tablet.jpg 1x"
                     media="(min-width: 768px)"/>
     
-                  <img src="./img/about-1.jpg" alt="barber1" width="270" height="445" >   
+                  <img src="./img/about-1.jpg" alt="barber1">   
                 </picture>
                </li>
             <li class="about-item">
                 <picture>
                    
                    <source srcset="./img/about-2-desktop@2x.jpg 2x, ./img/about-2.jpg 1x"
-                   media="(min-width:1200px)">
+                   media="(min-width:1170px)">
                    <source srcset="./img/about-2-tablet.jpg 1x, ./img/about-2-tablet@2x.jpg 2x"
                    media="(min-width: 768px)">
-                 <img src="./img/about-2.jpg" alt="barber2" width="270" height="445">   
+                 <img src="./img/about-2.jpg" alt="barber2">   
                 </picture>
                 </li>            </ul>
             
@@ -177,8 +182,8 @@
         <section class="feature">
             <div class="container feature-container">
 <div class="feature-wrap">
-            <ul class="feature-item">
-                <li class="feature-list">
+            <ul class="feature-item element-animation">
+                <li class="feature-list ">
                 <span class="feature-span">600</span>
                 <p class="feature-list-desc" >Satisfied customers per day</p>
             </li>
@@ -446,6 +451,9 @@
     </div>
        
     </section>
+  <section class="chocoland">
+
+  </section>
     </main>
     <footer class="footer">
         <div class="container footer-content">
@@ -454,6 +462,7 @@
             <li class="footer-item"> <a href="" target="_blank" rel="noopener nofollow noreferrer" class="footer-link link">Instagram</a></li>
         <li class="footer-item"> <a href="" target="_blank" rel="noopener nofollow noreferrer" class="footer-link link">Youtube</a></li>
     </ul></div>
+   
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -522,7 +531,47 @@
          
         </div>
       </div>
-   
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <div class="menu-container-wrap">
+        <button class="menu-toggle js-close-menu">
+          <svg
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+  
+        <ul class="mobile-menu">
+          <li><a href="" class="link">About</a></li>
+          <li><a href="" class="link">Services and prices</a></li>
+          <li><a href="" class="link">Barbers</a></li>
+          <li><a href="" class="link">Contacts</a></li>
+        </ul>
+        <div class="mobile-menu-contacts ">
+            <a href="tel:+380441111111" class="header-tel link">+38 044 111 11 11</a>
+            <button type="button" data-modal-open class="header-btn btn">Online-booking</button>
+        </div>
+        <ul class="mobile-menu-social   ">
+            <li class="mobile-menu-link link "><a href="">Instagram</a></li>
+            <li class="mobile-menu-link link"><a href="">Youtube</a> </li>
+        </ul>
+      </div></div>
+<script src="./js/scroll.js"></script>
+      <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
